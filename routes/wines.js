@@ -70,7 +70,7 @@ exports.updateWine = function(req,res){
 	});
 }
 
-exports.removeWine = function(req,res){
+exports.deleteWine = function(req,res){
 	var id = req.params.id;
 	console.log('Deleting wine:' + id);
 	db.collection('wines',function(err,collection){
@@ -97,7 +97,7 @@ var populateDB = function(){
 		grapes: "Tawi tawi",
 		country: "Philippines",
 		region: "SEA",
-		description, "The aromas of fruit and spice...",
+		description: "The aromas of fruit and spice...",
 		picture: "sait_cosme.jpg"
 	},
 	{
