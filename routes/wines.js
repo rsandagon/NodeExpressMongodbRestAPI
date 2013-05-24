@@ -78,7 +78,7 @@ exports.removeWine = function(req,res){
 			if(err){
 				res.send({'error':'An error has occurred'});
 			}else{
-				console.log('' + result + ' document(s) deleted'));
+				console.log('' + result + ' document(s) deleted');
 				res.send(req.body);
 			}
 		});
