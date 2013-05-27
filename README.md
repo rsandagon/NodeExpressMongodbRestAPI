@@ -6,18 +6,22 @@ See [http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express
 
 Installation
 ============
+A. Installing Node.js
 
-1. Open a shell, cd to this project's file directory, and execute the following command to install the express module.
+	1. Go to [http://nodejs.org](Nodejs website), and click install 
 
-'npm install'
+B. Install Express Module
 
-This will generate a nodecellar folder which will contain the Express modules.
 
-2. To install mongodb driver, execute the command:
+	1. Open a shell, cd to this project's file directory, and execute the following command to install the express module: 'npm install'	
+	
+	2. This will generate a nodecellar folder which will contain the Express modules.
 
-'npm install mongodb'
+C. Install mongodb driver
+	
+	1. execute the command: 'npm install mongodb'
+
 
 Requirements
 ============
-
 You need to install nodeJs, npm for Express then mongodb to make this run.
