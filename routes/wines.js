@@ -4,7 +4,7 @@ var Server = mongo.Server,
 	Db = mongo.Db,
 	BSON = mongo.BSONPure;
 
-var server = new Server('198.199.106.247',27017,{auto_reconnect: true, safe:false});
+var server = new Server('198.199.106.247',27017,{auto_reconnect: true, safe:true});
 db = new Db('winedb',server);
 
 db.open(function(err, db){
@@ -115,6 +115,7 @@ var populateDB = function(){
     	collection.insert(wines, {safe:true}, function(err,result){
     		if(err){
 				console.log("The 'wines' collection cannot be added..");
+				console.log(err);
 			}
     	})
     });
