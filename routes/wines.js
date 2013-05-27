@@ -4,7 +4,7 @@ var Server = mongo.Server,
 	Db = mongo.Db,
 	BSON = mongo.BSONPure;
 
-var server = new Server('198.199.106.247',27017,{auto_reconnect: true, safe:true});
+var server = new Server('198.199.106.247',27017,{auto_reconnect: true});
 db = new Db('winedb',server);
 
 db.open(function(err, db){
