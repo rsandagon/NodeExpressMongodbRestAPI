@@ -115,6 +115,7 @@ var populateDB = function(){
     	collection.insert(wines, {safe:true}, function(err,result){
     		if(err){
 				console.log("The 'wines' collection cannot be added..");
+			}
     	})
     });
 }
