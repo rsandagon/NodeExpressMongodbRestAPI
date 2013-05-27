@@ -21,6 +21,8 @@ C. Install mongodb driver
 	
 	1. execute the command: 'npm install mongodb'
 
+	2. For Ubuntu, you may use the mongo_install.bash  "$ sudo bash ./mongo_install.bash"
+
 
 Requirements
 ============
