@@ -113,7 +113,8 @@ var populateDB = function(){
 
     db.collection('wines', function(err,collection){
     	collection.insert(wines, {safe:true}, function(err,result){
-    		//	nothing;
+    		if(err){
+				console.log("The 'wines' collection cannot be added..");
     	})
     });
 }
