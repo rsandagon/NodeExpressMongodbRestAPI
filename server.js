@@ -2,7 +2,7 @@ var express = require('express'),
 	wine = require('./routes/wines'),
 	fs = require("fs");
 
-var app = express.createServer();
+var app = express();
 
 app.configure(function(){
 	app.use(express.logger('dev'));
